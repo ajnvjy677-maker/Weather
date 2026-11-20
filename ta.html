@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind</title>
+</head>
+
+<body class=" m-5 flex justify-center">
+  <div class="bg-blue-400 w-150 h-100 flex-col justify-items-center rounded-lg ">
+    <div class="pt-10">
+      <input id="input" type="text" placeholder=" Enter city name " class="border-2 rounded-xl border-black w-100 h-10">
+      <button id="btn" class="h-10 absolute right-113" onclick="getweatherdata()" >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div id="loading" class="pt-25 invisible">
+      <div class="w-12 h-12 border-4 border-black-500 border-t-transparent rounded-full animate-spin">
+      </div>
+    </div>
+    <div id="error" class="h-10 w-100 invisible text-center"></div>
+    <div id="image" class="w-auto h-auto absolute top-40 ">
+      <i id="icon" class="fa-solid fa-cloud-sun text-9xl"></i>
+    </div>
+
+    <div class="text-center">
+      <div id="tempreture">--C</div>
+    </div>
+
+    <div class="text-center">
+      <div id="cityname">--</div>
+      <p id="decreption"></p>
+    </div>
+
+    <div class="flex flex-row gap-5">
+      <div class="text-center" id="humidity">
+        <i class="fa-solid fa-droplet"></i>
+        <h3 id="hum">--%</h3>
+        <p>humidity</p>
+      </div>
+      <div class="text-center" >
+        <i class="fa-solid fa-droplet"></i>
+        <h3 id="windSpeed">--km/h</h3>
+        <p>wind speed</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="./ta.js"></script>
+</body>
+
+</html>
