@@ -8,8 +8,8 @@ A simple weather web app built with HTML, CSS (Tailwind) and vanilla JavaScript.
 
 ## Screenshots
 
-![Weather web Home Page](Screenshot 2026-11-20 223922.png)
-![Weather web after result](Screenshot 2026-11-20 223948.png)
+![Weather web Home Page](Screenshot/Screenshot 2026-11-20 223922.png)
+![Weather web after result](Screenshot/Screenshot 2026-11-20 223922.png)
 
 
 ## Features
